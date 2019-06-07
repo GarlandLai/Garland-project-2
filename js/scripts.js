@@ -3,33 +3,33 @@ function getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse
   if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
     return "go.png"
     } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "false"){
-    return "C.png"
+        return "C.png"
     } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "true"){
-    return "javascript.png"
+        return "javascript.png"
     } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "text" && animalInput === "dog" && trueFalse === "true"){
-    return "python.jpg"
+        return "python.jpg"
     } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
-    return "Ruby.jpg"
+        return "Ruby.jpg"
     } else if (answerInput === "no" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
-    return "C.png"
+        return "C.png"
     } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
-    return "go.png"
+        return "go.png"
     } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
-    return "python.jpg"
+        return "python.jpg"
     } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
-    return "C.png"
+        return "C.png"
     } else if (answerInput === "no" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
-      return "javascript.png"
+        return "javascript.png"
     } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
-      return "ruby.jpg"
+        return "ruby.jpg"
     } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
         return "go.png"
     } else if (answerInput === "no" && hoursInput === "1-7" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
-      return "C.png"
+        return "C.png"
     } else if (answerInput === "no" && hoursInput === "8+" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
-      return "go.png"
+        return "go.png"
     } else {
-      return "python.jpg"
+        return "python.jpg"
     }
   }
 
@@ -50,16 +50,15 @@ $(document).ready(function(){
     console.log(trueFalse)
     var language = getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse);
     console.log(language)
-
     var image = '<img src="img/' + language + '" alt="picture of your match">';
     console.log(image)
-    var name = '<span>' + nameInput + '</span>'
+    // var name = '<span>' + nameInput + '</span>'
 
     $("#yourLanguage").show();
+//Could not get name to remove with each submit..
     $("#yourLanguage span").append(nameInput);
     $("#yourLanguage img").remove();
     $("#yourLanguage h3").append(image);
-
     event.preventDefault();
   });
 });
