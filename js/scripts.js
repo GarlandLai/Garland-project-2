@@ -75,10 +75,11 @@ $(document).ready(function(){
     console.log(trueFalse)
     var language = getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse);
     console.log(language)
-    // var image = "<img src='img/' + language + ''alt='A picture of your language'>"
-    // console.log(image)
-    // $("#yourLanguage").remove();
-    $("#yourLanguage").append(language);
+    var image = "<img src='img/' + language + '''alt='A picture of your language'>"
+    console.log(image)
+
+    $("#yourLanguage").show($);
+    $("#yourLanguage p").append(language);
     event.preventDefault();
   });
 });
