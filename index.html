@@ -12,27 +12,76 @@
     <div class="container">
       <form id="survey">
 
-        <div class="group-form">
+        <div class="form-group">
           <label for="hours">How many hours would you like to work a day?</label>
           <input id="hours" class="form-control" type="number">
         </div>
 
-        <div class="group-form">
+        <div class="form-group">
           <label for="learning">Which learning method do you prefer?</label>
           <select id="learning">
             <option value="view">Visual learning</option>
             <option value="text">Reading text</option>
             <option value="trial">Trial and error</option>
+          </select>
         </div>
 
-        <div class="group-form">
+        <div class="form-group">
           <h5> Dogs or Cats?</h5>
-            
+          <div class="radio">
+            <label>
+              <input type="radio" name="animal" value="dog">
+              Dogs
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="animal" value="cat">
+              Cats
+            </label>
+          </div>
+        </div>
 
+        <div class="form-group">
+          <h5> Check all that apply:</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="dog" value="dog">
+              Dogs
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="cat" value="cat">
+              Cats
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h5> I enjoy solving problems:</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="trueFalse" value="true">
+              True
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="trueFalse" value="false">
+              False
+            </label>
+          </div>
         </div>
 
         <button type="submit" class="btn btn-info">Submit</button>
       </form>
+
+      <div id="yourMatch">
+        <h2>You should learn:</h2>
+
+      </div>
+
     </div>
   </body>
 </html>
