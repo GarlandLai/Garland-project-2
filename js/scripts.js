@@ -37,28 +37,27 @@ function getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse
 $(document).ready(function(){
   $("form#survey").submit(function(event){
     var nameInput =$("#name").val();
-    console.log(nameInput)
+// console.log(nameInput)
     var answerInput =$("input:radio[name=answer]:checked").val();
-    console.log(answerInput)
+// console.log(answerInput)
     var hoursInput = $("#hours").val();
-    console.log(hoursInput)
+// console.log(hoursInput)
     var learnInput = $("#learning").val();
-    console.log(learnInput)
+// console.log(learnInput)
     var animalInput = $("input:radio[name=animal]:checked").val();
-    console.log(animalInput)
+// console.log(animalInput)
     var trueFalse = $("input:radio[name=trueFalse]:checked").val();
-    console.log(trueFalse)
+// console.log(trueFalse)
     var language = getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse);
-    console.log(language)
+// console.log(language)
     var image = '<img src="img/' + language + '" alt="picture of your match">';
-    console.log(image)
-    // var name = '<span>' + nameInput + '</span>'
+// console.log(image)
 
-    $("#yourLanguage").show();
 //Could not get name to remove with each submit..
-    $("#yourLanguage span").append(nameInput);
     $("#yourLanguage img").remove();
+    $("#yourLanguage span").append(nameInput);
     $("#yourLanguage h3").append(image);
+    $("#yourLanguage").show();
     event.preventDefault();
   });
 });
