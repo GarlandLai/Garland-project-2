@@ -1,4 +1,4 @@
-# _Garland Lai Program Language Form
+# Garland Lai Program Language Form
 
 ### _Epicodus JavaScript and JQuery Project for Week 2, June 7th, 2019_
 
