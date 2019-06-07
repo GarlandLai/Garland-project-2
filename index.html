@@ -13,6 +13,28 @@
       <form id="survey">
 
         <div class="form-group">
+          <label for="name">What is your name?</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <h5>Do you want to learn to program?</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="answer" value="Yes">
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="answer" value="No">
+              No
+            </label>
+          </div>
+        </div>
+
+
+        <div class="form-group">
           <label for="hours">How many hours would you like to work a day?</label>
           <input id="hours" class="form-control" type="number">
         </div>
@@ -39,22 +61,12 @@
               <input type="radio" name="animal" value="cat">
               Cats
             </label>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <h5> Check all that apply:</h5>
-          <div class="radio">
-            <label>
-              <input type="radio" name="dog" value="dog">
-              Dogs
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="cat" value="cat">
-              Cats
-            </label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="animal" value="both">
+                I love both equally!
+              </label>
+            </div>
           </div>
         </div>
 
@@ -77,8 +89,8 @@
         <button type="submit" class="btn btn-info">Submit</button>
       </form>
 
-      <div id="yourMatch">
-        <h2>You should learn:</h2>
+      <div id="yourLanguage">
+        <h3>You should learn:</h3>
 
       </div>
 
