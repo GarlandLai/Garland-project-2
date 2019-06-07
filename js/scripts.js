@@ -1,68 +1,25 @@
 //Business Logic
 function getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse) {
   if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
-    return "You should learn Go!"
+    return "go.png"
   } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "false"){
-    return "You should learn C#!"
+    return "C.png!"
   } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "true"){
-    return "You should learn javascript"
+    return "javascript.png"
   } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "text" && animalInput === "dog" && trueFalse === "true"){
-    return "You should learn Python!"
+    return "python.jpg"
   } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
-    return "You should learn Ruby!"
+    return "Ruby.jpg"
   } else if (answerInput === "no" && hoursInput === "1" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
-    return "You should learn C#!"
+    return "C.png"
   }
 }
-
-
-
-
-  //   if (hoursInput === "1") {
-  //     if (learnInput === "visual") {
-  //       if (animalInput === "dog") {
-  //         if (trueFalse === "True"){
-  //           return C.png;
-  //         } else {
-  //           return javascript.png
-  //         }
-  //       } else if (animal === "cat"){
-  //           return go.png
-  //         }
-  //         if (trueFalse === true) {
-  //           return ruby.jpg
-  //         } else { //trueFalse === false
-  //           return python
-  //         }
-  //       } else if (learnInput === "text"){
-  //         if (trueFalse === true) {
-  //           return go.png
-  //         }  else { //trueFalse === false
-  //           return ruby.png
-  //         }
-  //       } else if (hoursInput === "2"){
-  //           return javascript.jpg
-  //         }
-  //       if (trueFalse === true) {
-  //         return go.png
-  //         } else { //trueFalse === false
-  //         return
-  //
-  //
-  //       }if (answerInput === "no"){
-  //       if (trueFalse === true) {
-  //         return javascript.png
-  //     } else { //trueFalse === false
-  //   }
-  //       }
-  //     }
-  //   }
-  // }
-
 
 //User Interface Logic
 $(document).ready(function(){
   $("form#survey").submit(function(event){
+    var nameInput =$("#name").val();
+    console.log(nameInput)
     var answerInput =$("input:radio[name=answer]:checked").val();
     console.log(answerInput)
     var hoursInput = $("#hours").val();
@@ -75,11 +32,25 @@ $(document).ready(function(){
     console.log(trueFalse)
     var language = getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse);
     console.log(language)
-    var image = "<img src='img/' + language + '''alt='A picture of your language'>"
+
+    var image = '<img src="img/' + language + '" alt="picture of your match">';
     console.log(image)
 
-    $("#yourLanguage").show($);
-    $("#yourLanguage p").append(language);
+    $("#yourLanguage").show();
+
+    $("#insertName nam").remove();
+    $("#insertName").append(nameInput);
+
+    $("#yourLanguage img").remove();
+    $("#yourLanguage h3").append(image);
+
     event.preventDefault();
+  });
+
+  $("#yourLanguage p").click(function() {
+
+    // $(this).children(".moreInfo").Toggle();
+    // $("img").removeClass("highlight");
+    // $(this).children("img").addClass("highlight");
   });
 });
