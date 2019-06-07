@@ -3,7 +3,7 @@ function getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse
   if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
     return "go.png"
   } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "false"){
-    return "C.png!"
+    return "C.png"
   } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "true"){
     return "javascript.png"
   } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "text" && animalInput === "dog" && trueFalse === "true"){
@@ -35,22 +35,13 @@ $(document).ready(function(){
 
     var image = '<img src="img/' + language + '" alt="picture of your match">';
     console.log(image)
+    var name = '<span>' + nameInput + '</span>'
 
     $("#yourLanguage").show();
-
-    $("#insertName nam").remove();
-    $("#insertName").append(nameInput);
-
+    $("#yourLanguage span").append(nameInput);
     $("#yourLanguage img").remove();
     $("#yourLanguage h3").append(image);
 
     event.preventDefault();
-  });
-
-  $("#yourLanguage p").click(function() {
-
-    // $(this).children(".moreInfo").Toggle();
-    // $("img").removeClass("highlight");
-    // $(this).children("img").addClass("highlight");
   });
 });
