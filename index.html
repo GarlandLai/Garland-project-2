@@ -5,11 +5,34 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Program Language Suggestor</title>
   </head>
   <body>
+    <h2>What Language Fits Your Personality?</h2>
     <div class="container">
+      <form id="survey">
 
+        <div class="group-form">
+          <label for="hours">How many hours would you like to work a day?</label>
+          <input id="hours" class="form-control" type="number">
+        </div>
+
+        <div class="group-form">
+          <label for="learning">Which learning method do you prefer?</label>
+          <select id="learning">
+            <option value="view">Visual learning</option>
+            <option value="text">Reading text</option>
+            <option value="trial">Trial and error</option>
+        </div>
+
+        <div class="group-form">
+          <h5> Dogs or Cats?</h5>
+            
+
+        </div>
+
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
     </div>
   </body>
 </html>
