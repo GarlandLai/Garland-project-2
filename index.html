@@ -18,16 +18,16 @@
         </div>
 
         <div class="form-group">
-          <h5>Do you want to learn to program?</h5>
+          <h5> Are you interested in learning to program?</h5>
           <div class="radio">
             <label>
-              <input type="radio" name="answer" value="Yes">
+              <input type="radio" name="answer" value="2">
               Yes
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="answer" value="No">
+              <input type="radio" name="answer" value="0">
               No
             </label>
           </div>
@@ -35,16 +35,20 @@
 
 
         <div class="form-group">
-          <label for="hours">How many hours would you like to work a day?</label>
-          <input id="hours" class="form-control" type="number">
+          <label for="hours">How many hours can you dedicate a day?</label>
+          <select id="learning">
+            <option value="0">0-3 hours</option>
+            <option value="1">4-7 hours</option>
+            <option value="2">8+ hours</option>
+          </select>
         </div>
 
         <div class="form-group">
           <label for="learning">Which learning method do you prefer?</label>
           <select id="learning">
-            <option value="view">Visual learning</option>
-            <option value="text">Reading text</option>
-            <option value="trial">Trial and error</option>
+            <option value="1">Visual learning</option>
+            <option value="1">Reading text</option>
+            <option value="2">Trial and error</option>
           </select>
         </div>
 
@@ -52,18 +56,18 @@
           <h5> Dogs or Cats?</h5>
           <div class="radio">
             <label>
-              <input type="radio" name="animal" value="dog">
+              <input type="radio" name="animal" value="1">
               Dogs
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="animal" value="cat">
+              <input type="radio" name="animal" value="1">
               Cats
             </label>
             <div class="radio">
               <label>
-                <input type="radio" name="animal" value="both">
+                <input type="radio" name="animal" value="2">
                 I love both equally!
               </label>
             </div>
@@ -74,13 +78,13 @@
           <h5> I enjoy solving problems:</h5>
           <div class="radio">
             <label>
-              <input type="radio" name="trueFalse" value="true">
+              <input type="radio" name="trueFalse" value="2">
               True
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="trueFalse" value="false">
+              <input type="radio" name="trueFalse" value="0">
               False
             </label>
           </div>
