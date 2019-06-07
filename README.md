@@ -19,6 +19,7 @@ _This page was created to help users pick which program language to learn. It wa
 ## Known Bugs
 
 * _Could not remove nameInput after submitting new form_
+* _Branching confusing. Too many possibilities and had to just use an "else"_
 
 ## Support and contact details
 
@@ -31,7 +32,7 @@ _If you have any questions, concerns, or suggestions, please contact me at Garla
 * _CSS_
 * _Bootstrap_
 * _JavaScript_
-* _Jquery_
+* _JQuery_
 
 #### License
 

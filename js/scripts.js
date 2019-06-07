@@ -2,18 +2,36 @@
 function getLanguage(answerInput, hoursInput, learnInput, animalInput, trueFalse) {
   if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
     return "go.png"
-  } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "false"){
+    } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "false"){
     return "C.png"
-  } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "true"){
+    } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "true"){
     return "javascript.png"
-  } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "text" && animalInput === "dog" && trueFalse === "true"){
+    } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "text" && animalInput === "dog" && trueFalse === "true"){
     return "python.jpg"
-  } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
+    } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
     return "Ruby.jpg"
-  } else if (answerInput === "no" && hoursInput === "1" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
+    } else if (answerInput === "no" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "dog" && trueFalse === "true"){
     return "C.png"
+    } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
+    return "go.png"
+    } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
+    return "python.jpg"
+    } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
+    return "C.png"
+    } else if (answerInput === "no" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
+      return "javascript.png"
+    } else if (answerInput === "yes" && hoursInput === "1-7" && learnInput === "visual" && animalInput === "cat" && trueFalse === "false"){
+      return "ruby.jpg"
+    } else if (answerInput === "yes" && hoursInput === "8+" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
+        return "go.png"
+    } else if (answerInput === "no" && hoursInput === "1-7" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
+      return "C.png"
+    } else if (answerInput === "no" && hoursInput === "8+" && learnInput === "text" && animalInput === "cat" && trueFalse === "false"){
+      return "go.png"
+    } else {
+      return "python.jpg"
+    }
   }
-}
 
 //User Interface Logic
 $(document).ready(function(){
