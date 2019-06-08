@@ -2,6 +2,23 @@
   display:none;
 }
 
+.python-showing {
+  display: none;
+}
+
+h6 {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+h6:hover {
+  text-decoration: underline;
+}
+
+.info {
+  display: none;
+}
+
 img {
   width: 300px;
   height: auto;

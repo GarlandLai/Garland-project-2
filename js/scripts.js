@@ -83,4 +83,9 @@ $(document).ready(function(){
     $("#yourLanguage h3").append(image);
     event.preventDefault();
   });
+
+    $("h6").click(function() {
+      $(".python-showing").show();
+      $(".python-hidden").hide();
+    });
 });
