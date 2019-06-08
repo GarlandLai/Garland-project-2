@@ -79,13 +79,29 @@ $(document).ready(function(){
     $("#yourLanguage").show();
     $("#yourLanguage img").remove();
     // $("#yourLanguage span").remove();
-    $("span").append(nameInput);
+    $("strong").append(nameInput);
     $("#yourLanguage h3").append(image);
     event.preventDefault();
   });
 
-    $("h6").click(function() {
+    $("#python").click(function() {
       $(".python-showing").show();
       $(".python-hidden").hide();
+    });
+    $("#c").click(function() {
+      $(".c-showing").toggle();
+      $(".c-hidden").toggle();
+    });
+    $("#ruby").click(function() {
+      $(".ruby-showing").show();
+      $(".ruby-hidden").hide();
+    });
+    $("#java").click(function() {
+      $(".javascript-showing").show();
+      $(".javascript-hidden").hide();
+    });
+    $("#go").click(function() {
+      $(".go-showing").show();
+      $(".go-hidden").hide();
     });
 });

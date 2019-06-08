@@ -4,15 +4,37 @@
 
 .python-showing {
   display: none;
+  background-color: grey;
+  padding: 7px;
 }
 
-h6 {
-  cursor: pointer;
-  color: #0088cc;
+.c-showing {
+  display: none;
+  background-color: grey;
+  padding: 7px;
+}
+
+.javascript-showing {
+  display: none;
+  background-color: grey;
+  padding: 7px;
+}
+
+.ruby-showing {
+  display: none;
+  background-color: grey;
+  padding: 7px;
+}
+
+.go-showing {
+  display: none;
+  background-color: grey;
+  padding: 7px;
 }
 
 h6:hover {
-  text-decoration: underline;
+  cursor: pointer;
+  color: black;
 }
 
 .info {
@@ -30,6 +52,7 @@ img {
   color: black;
   margin: 10px;
 }
+
 
 body {
   background: black;
