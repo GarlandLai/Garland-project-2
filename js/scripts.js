@@ -76,11 +76,12 @@ $(document).ready(function(){
 
 
 //Could not get name to remove with each submit..
-    $("#yourLanguage").show();
-    $("#yourLanguage img").remove();
-    // $("#yourLanguage span").remove();
+
+    $("#survey").hide();
+    // $("#yourLanguage img").remove();
     $("strong").append(nameInput);
     $("#yourLanguage h3").append(image);
+    $("#yourLanguage").show();
     event.preventDefault();
   });
 
@@ -104,4 +105,10 @@ $(document).ready(function(){
       $(".go-showing").show();
       $(".go-hidden").hide();
     });
-});
+
+    $("#refreshForm").click(function(){
+      // $(this).children("strong").remove();
+      $("#yourLanguage img").remove();
+      $("#survey").show();
+    });
+  });
