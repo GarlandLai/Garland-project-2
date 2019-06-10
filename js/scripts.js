@@ -107,7 +107,6 @@ $(document).ready(function(){
     });
 
     $("#refreshForm").click(function(){
-      // $(this).children("strong").remove();
       $("#yourLanguage img").remove();
       $("#survey").show();
     });
