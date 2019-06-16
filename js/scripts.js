@@ -52,24 +52,24 @@ $(document).ready(function(){
   });
 
     $("#python").click(function() {
-      $(".python-showing").show();
-      $(".python-hidden").hide();
+      $(".python-showing").toggle();
+      // $(".python-hidden").hide();
     });
     $("#c").click(function() {
       $(".c-showing").toggle();
-      $(".c-hidden").toggle();
+      // $(".c-hidden").toggle();
     });
     $("#ruby").click(function() {
-      $(".ruby-showing").show();
-      $(".ruby-hidden").hide();
+      $(".ruby-showing").toggle();
+      // $(".ruby-hidden").hide();
     });
     $("#java").click(function() {
-      $(".javascript-showing").show();
-      $(".javascript-hidden").hide();
+      $(".javascript-showing").toggle();
+      // $(".javascript-hidden").hide();
     });
     $("#go").click(function() {
-      $(".go-showing").show();
-      $(".go-hidden").hide();
+      $(".go-showing").toggle();
+      // $(".go-hidden").hide();
     });
 
     $("#refreshForm").click(function(){
