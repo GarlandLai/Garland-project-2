@@ -45,8 +45,8 @@ $(document).ready(function(){
 
     $("#survey").hide();
     // $("#yourLanguage img").remove();
-    $("strong").append(nameInput);
-    $("#yourLanguage h3").append(image);
+    $("strong").text(nameInput);
+    $("#yourLanguage h3").text(image);
     $("#yourLanguage").show();
     event.preventDefault();
   });
@@ -75,6 +75,7 @@ $(document).ready(function(){
     $("#refreshForm").click(function(){
       $("#yourLanguage img").remove();
       $("#survey").show();
+      $("#yourLanguage").hide();
     });
   });
 
